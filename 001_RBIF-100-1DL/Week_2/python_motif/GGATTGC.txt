@@ -1,6 +1,6 @@
-,gcgcccg
+,ggattgc
 chr1,0
-chr2,0
+chr2,1
 chr3,0
 chr4,0
 chr5,0
@@ -21,9 +21,9 @@ chr19,0
 chr20,0
 chr21,0
 chr22,0
-chr23,1
+chr23,0
 chr24,0
-chr25,0
+chr25,1
 chr26,0
 chr27,0
 chr28,0
@@ -34,7 +34,7 @@ chr32,0
 chr33,0
 chr34,0
 chr35,0
-chr36,1
+chr36,0
 chr37,0
 chr38,0
 chr39,0

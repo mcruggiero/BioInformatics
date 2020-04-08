@@ -1,4 +1,4 @@
-,actagcta
+,tcccgaa
 chr1,0
 chr2,0
 chr3,0

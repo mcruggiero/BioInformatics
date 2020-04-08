@@ -1,6 +1,6 @@
-,agagtcag
+,tagctaat
 chr1,0
-chr2,0
+chr2,1
 chr3,0
 chr4,0
 chr5,0
@@ -26,13 +26,13 @@ chr24,0
 chr25,0
 chr26,0
 chr27,0
-chr28,1
-chr29,0
+chr28,0
+chr29,1
 chr30,0
 chr31,0
 chr32,0
 chr33,0
-chr34,1
+chr34,0
 chr35,0
 chr36,0
 chr37,0
@@ -47,6 +47,6 @@ chr45,0
 chr46,0
 chr47,0
 chr48,0
-chr49,1
+chr49,0
 chr50,0
-total,3
+total,2

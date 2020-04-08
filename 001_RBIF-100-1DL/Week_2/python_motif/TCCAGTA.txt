@@ -1,10 +1,10 @@
-,aaatcctt
+,tccagta
 chr1,0
 chr2,0
 chr3,0
 chr4,0
 chr5,0
-chr6,0
+chr6,1
 chr7,0
 chr8,0
 chr9,0
@@ -22,9 +22,9 @@ chr20,0
 chr21,0
 chr22,0
 chr23,0
-chr24,0
+chr24,1
 chr25,0
-chr26,1
+chr26,0
 chr27,0
 chr28,0
 chr29,0
@@ -42,7 +42,7 @@ chr40,0
 chr41,0
 chr42,0
 chr43,0
-chr44,1
+chr44,0
 chr45,0
 chr46,0
 chr47,0
