@@ -10,6 +10,18 @@
 # Scan through the chromosome
 ###
 
+
+# Test to see if directory exists, delete if it does
+File="/media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output"
+if [ -d $File ]; then
+    printf "$File exists, deleting file\n"
+    rm -r bash_output
+fi
+
+#Make new directory for output
+mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
+
+#motifs will be our array where values are stored.
 motifs=()
 printf "The following Motifs will be checked:\n"
 
@@ -18,28 +30,24 @@ while IFS= read -r line
 do
     printf "$line\n"
     motifs+=("$line")
-    
 done < motifs.txt
 
 printf "\n\n"
-a=""
 
-# Test to see if directory exists
-File="/media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output"
-if [ -d $File ]; then
-    echo "$File exists, deleting file"
-    rm -r bash_output
-    ls
-fi
-
-mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
-
-
-
+# This is the complete counting
 for motif in "${motifs[@]}"
 do 
-    a+=$motif
     printf "$motif," >> $File/motif_count.txt
-    grep -o -i "$motif\n" test1.fasta | wc -l >> $File/motif_count.txt
-    
+    grep -o -i "$motif" test1.fasta | wc -l >> $File/motif_count.txt
 done
+
+# I am going to make a hash of the entire .fasta file 
+# and then search the values by key
+while IFS= read -r line
+do
+    if [ ${line:0:4} == ">chr" ]; then 
+        printf "${line}\n"
+    else 
+        echo 0 
+    fi
+done < test1.fasta
