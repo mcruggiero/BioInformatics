@@ -21,9 +21,25 @@ do
     
 done < motifs.txt
 
-a=1
-for i in "${motifs[@]}"
+printf "\n\n"
+a=""
+
+# Test to see if directory exists
+File="/media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output"
+if [ -d $File ]; then
+    echo "$File exists, deleting file"
+    rm -r bash_output
+    ls
+fi
+
+mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
+
+
+
+for motif in "${motifs[@]}"
 do 
-   a+=1
-   echo $a
+    a+=$motif
+    printf "$motif," >> $File/motif_count.txt
+    grep -o -i "$motif\n" test1.fasta | wc -l >> $File/motif_count.txt
+    
 done
