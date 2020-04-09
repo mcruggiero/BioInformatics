@@ -20,6 +20,24 @@ fi
 
 #Make new directory for output
 mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
+mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output/motifs
+
+# I am going to make an array of the entire .fasta file 
+# and then search the values by the motifs
+
+chromosomes=()
+chromo=()
+while IFS= read -r line
+do
+    if [ ${line:0:4} == ">chr" ]; then
+        chromosomes+=("$chromo")
+        # Unsetting the chromo variable allows me to reset.
+        unset chromo
+        chromo+=$(echo "$line" | tr -cd "[:print:]\n")
+    else
+        chromo+=$(echo "$line" | tr -cd "[:print:]\n")
+    fi
+done < test1.fasta
 
 #motifs will be our array where values are stored.
 motifs=()
@@ -37,17 +55,7 @@ printf "\n\n"
 # This is the complete counting
 for motif in "${motifs[@]}"
 do 
+    touch $File/motifs/"${motif^^}".txt
     printf "$motif," >> $File/motif_count.txt
     grep -o -i "$motif" test1.fasta | wc -l >> $File/motif_count.txt
 done
-
-# I am going to make a hash of the entire .fasta file 
-# and then search the values by key
-while IFS= read -r line
-do
-    if [ ${line:0:4} == ">chr" ]; then 
-        printf "${line}\n"
-    else 
-        echo 0 
-    fi
-done < test1.fasta
