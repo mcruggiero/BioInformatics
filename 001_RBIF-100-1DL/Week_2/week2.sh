@@ -46,16 +46,33 @@ printf "The following Motifs will be checked:\n"
 #Internal Field Separator (IFS)
 while IFS= read -r line
 do
+    # [Task 1]
     printf "$line\n"
     motifs+=("$line")
+    # [Task 2]
 done < motifs.txt
 
 printf "\n\n"
 
 # This is the complete counting
+# First iterate through motif
 for motif in "${motifs[@]}"
 do 
     touch $File/motifs/"${motif^^}".txt
+    printf "$motif found in the following chromosomes:\n" >> $File/motifs/"${motif^^}".txt
+    
+    # Then iterate through chromosomes use indexing for numbering
+    for (( j = 1 ; j <= ${#chromosomes[@]}; j++ ))
+    do
+        if [[ ${chromosomes[j]} == *"$motif"* ]]; then
+            # [Task 3]
+            printf "$j, " >> $File/motifs/"${motif^^}".txt
+        fi
+    done
+
+    # [Task 4]
     printf "$motif," >> $File/motif_count.txt
     grep -o -i "$motif" test1.fasta | wc -l >> $File/motif_count.txt
 done
+        
+# All Tasks Complete
