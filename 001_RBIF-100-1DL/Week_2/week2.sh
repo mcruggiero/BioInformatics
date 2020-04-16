@@ -10,17 +10,16 @@
 # Scan through the chromosome
 ###
 
-
 # Test to see if directory exists, delete if it does
-File="/media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output"
+File="/home/ruggm/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output"
 if [ -d $File ]; then
     printf "$File exists, deleting file\n"
     rm -r bash_output
 fi
 
 #Make new directory for output
-mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
-mkdir /media/data/Documents/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output/motifs
+mkdir /home/ruggm/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output
+mkdir /home/ruggm/BioInformatics/001_RBIF-100-1DL/Week_2/bash_output/motifs
 
 # I am going to make an array of the entire .fasta file 
 # and then search the values by the motifs
