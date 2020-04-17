@@ -7,4 +7,4 @@ gnome-terminal \
   --command="bash -c 'ssh ruggm@ec2-18-224-15-142.us-east-2.compute.amazonaws.com; $SHELL'"
 
 ssh -NfL 8888:localhost:8888 ruggm@ec2-18-224-15-142.us-east-2.compute.amazonaws.com
-x-www-browser http://localhost:8888/
+x-www-browser https://localhost:8888/
