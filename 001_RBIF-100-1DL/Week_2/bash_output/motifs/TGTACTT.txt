@@ -1,0 +1,2 @@
+tgtactt found in the following chromosomes:
+23, 33, 42, 
