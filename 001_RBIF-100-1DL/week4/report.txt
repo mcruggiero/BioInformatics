@@ -1,21 +1,19 @@
 
 Analysis Run Started:
-Wed May  6 03:42:35 2020
+Wed May  6 04:20:10 2020
 ----------
 The following entries are of interest:
-    Discoverer       Location  ...         Status  code_name
-9     Kelleher     New Jersey  ...  Not sequenced      bunny
-11       Rivet         Sweden  ...      Sequenced    chicken
-17     Forness     New Jersey  ...      Sequenced  dromedary
-21  Vanderburg         Sweden  ...      Sequenced        fox
-22      Gorham     New Jersey  ...      Sequenced       goat
-23  Mccafferty        Florida  ...      Sequenced     gopher
-24      Landey        Florida  ...      Sequenced    gorilla
-30      Kesner     New Jersey  ...      Sequenced       lamb
-33    Knighten     New Jersey  ...  Not sequenced   lovebird
-46        Bush  Staten Island  ...  Not sequenced     turtle
-
-[10 rows x 6 columns]
+    Discoverer       Location  Diamater (mm) Environment         Status  code_name
+9     Kelleher     New Jersey             26       Swamp  Not sequenced      bunny
+11       Rivet         Sweden             26       Swamp      Sequenced    chicken
+17     Forness     New Jersey             30      Sewage      Sequenced  dromedary
+21  Vanderburg         Sweden             26       River      Sequenced        fox
+22      Gorham     New Jersey             24      Sewage      Sequenced       goat
+23  Mccafferty        Florida             21      Sewage      Sequenced     gopher
+24      Landey        Florida             30       River      Sequenced    gorilla
+30      Kesner     New Jersey             28      Sewage      Sequenced       lamb
+33    Knighten     New Jersey             25       River  Not sequenced   lovebird
+46        Bush  Staten Island             20       River  Not sequenced     turtle
 copying bunny.fasta file
 copying chicken.fasta file
 copying dromedary.fasta file
@@ -26,6 +24,11 @@ copying gorilla.fasta file
 copying lamb.fasta file
 copying lovebird.fasta file
 copying turtle.fasta file
+
+Shared Genes
+Empty DataFrame
+Columns: [lamb, chicken, gopher, dromedary, turtle, bunny, lovebird, goat, fox, gorilla]
+Index: []
 
 Top Ten Motifs
 name
@@ -308,114 +311,3 @@ Inserting A at NGG sites on file dromedary_precrispr.fasta
 -------------
 Inserting A at NGG sites on file lovebird_precrispr.fasta
 -------------
-
-Top Ten Motifs
-name
-TTTTTACACTTC    3291
-TACACTTCTACA    1300
-CTTCAAAATTTT    1284
-TACACTTCAAAA     117
-TACACTTCTTTT     116
-AAAATTTTTACA      96
-TACACTTCTCTC      86
-TTTTTTTTTACA      78
-CTTCCTTCAAAA      73
-TTTTCTTCAAAA      70
-Name: sum, dtype: int64
-
-Top Motifs Per Animal
-
-lamb
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-chicken
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gopher
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-dromedary
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-turtle
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-bunny
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-lovebird
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-goat
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-fox
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gorilla
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-
-Top Ten Motifs
-name
-TTTTTACACTTC    3291
-TACACTTCTACA    1300
-CTTCAAAATTTT    1284
-TACACTTCAAAA     117
-TACACTTCTTTT     116
-AAAATTTTTACA      96
-TACACTTCTCTC      86
-TTTTTTTTTACA      78
-CTTCCTTCAAAA      73
-TTTTCTTCAAAA      70
-Name: sum, dtype: int64
-
-Top Motifs Per Animal
-
-lamb
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-chicken
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gopher
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-dromedary
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-turtle
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-bunny
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-lovebird
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-goat
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-fox
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gorilla
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-
-Top Ten Motifs
-name
-TTTTTACACTTC    3291
-TACACTTCTACA    1300
-CTTCAAAATTTT    1284
-TACACTTCAAAA     117
-TACACTTCTTTT     116
-AAAATTTTTACA      96
-TACACTTCTCTC      86
-TTTTTTTTTACA      78
-CTTCCTTCAAAA      73
-TTTTCTTCAAAA      70
-Name: sum, dtype: int64
-
-Top Motifs Per Animal
-
-lamb
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-chicken
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gopher
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-dromedary
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-turtle
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-bunny
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-lovebird
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-goat
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
-fox
-['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
-gorilla
-['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']

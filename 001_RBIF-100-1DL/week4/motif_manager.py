@@ -160,7 +160,6 @@ def create_crispy():
     for animal in similar:
         count_dict[animal] = {}
         for gene in similar[animal]:
-            print(similar[animal][gene])
             count = gene_list.count(similar[animal][gene]) - 1
             count_dict[animal][gene] = count
             if count > 0: print("shared gene!")
@@ -168,9 +167,9 @@ def create_crispy():
     shared_genes = pd.DataFrame(count_dict)
     
     with open("report.txt", "a+") as f:
-        f.write("/nShared Genes/n")
-        f.write(shared_genes[shared_genes != 0].dropna())
-        f.write("\nTop Ten Motifs\n")
+        f.write("\nShared Genes\n")
+        f.write("{}".format(shared_genes[shared_genes != 0].dropna()))
+        f.write("\n\nTop Ten Motifs\n")
         f.write("{}".format(count_values["sum"].nlargest(10)))
         f.write('\n\nTop Motifs Per Animal\n')
         for animal in top_per_animal:
