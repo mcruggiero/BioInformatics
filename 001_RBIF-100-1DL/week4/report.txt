@@ -1,0 +1,582 @@
+
+Analysis Run Started:
+Wed May  6 02:54:51 2020
+----------
+The following entries are of interest:
+    Discoverer       Location  ...         Status  code_name
+9     Kelleher     New Jersey  ...  Not sequenced      bunny
+11       Rivet         Sweden  ...      Sequenced    chicken
+17     Forness     New Jersey  ...      Sequenced  dromedary
+21  Vanderburg         Sweden  ...      Sequenced        fox
+22      Gorham     New Jersey  ...      Sequenced       goat
+23  Mccafferty        Florida  ...      Sequenced     gopher
+24      Landey        Florida  ...      Sequenced    gorilla
+30      Kesner     New Jersey  ...      Sequenced       lamb
+33    Knighten     New Jersey  ...  Not sequenced   lovebird
+46        Bush  Staten Island  ...  Not sequenced     turtle
+
+[10 rows x 6 columns]
+copying bunny.fasta file
+copying chicken.fasta file
+copying dromedary.fasta file
+copying fox.fasta file
+copying goat.fasta file
+copying gopher.fasta file
+copying gorilla.fasta file
+copying lamb.fasta file
+copying lovebird.fasta file
+copying turtle.fasta file
+
+Top Ten Motifs
+name
+TTTTTACACTTC    3291
+TACACTTCTACA    1300
+CTTCAAAATTTT    1284
+TACACTTCAAAA     117
+TACACTTCTTTT     116
+AAAATTTTTACA      96
+TACACTTCTCTC      86
+TTTTTTTTTACA      78
+CTTCCTTCAAAA      73
+TTTTCTTCAAAA      70
+Name: sum, dtype: int64
+
+Top Motifs Per Animal
+
+lamb
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+chicken
+['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
+gopher
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+dromedary
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+turtle
+['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
+bunny
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+lovebird
+['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
+goat
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+fox
+['TTTTTACACTTC', 'TACACTTCTACA', 'CTTCAAAATTTT']
+gorilla
+['TTTTTACACTTC', 'CTTCAAAATTTT', 'TACACTTCTACA']
+Searching bunny_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene9
+Found NGG at >gene21
+Found NGG at >gene41
+Found NGG at >gene64
+Found NGG at >gene122
+Found NGG at >gene124
+Found NGG at >gene211
+Found NGG at >gene216
+Found NGG at >gene253
+Found NGG at >gene269
+Found NGG at >gene331
+Found NGG at >gene464
+Found NGG at >gene489
+On bunny_topmotifs.fasta, found 13 NGG genes out of 225 candidates
+-----------------
+
+Searching lamb_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene8
+Found NGG at >gene20
+Found NGG at >gene25
+Found NGG at >gene41
+Found NGG at >gene68
+Found NGG at >gene82
+Found NGG at >gene86
+Found NGG at >gene121
+Found NGG at >gene122
+Found NGG at >gene134
+Found NGG at >gene153
+Found NGG at >gene199
+Found NGG at >gene219
+Found NGG at >gene377
+Found NGG at >gene409
+Found NGG at >gene428
+On lamb_topmotifs.fasta, found 16 NGG genes out of 213 candidates
+-----------------
+
+Searching lovebird_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene13
+Found NGG at >gene14
+Found NGG at >gene20
+Found NGG at >gene37
+Found NGG at >gene49
+Found NGG at >gene58
+Found NGG at >gene76
+Found NGG at >gene79
+Found NGG at >gene135
+Found NGG at >gene149
+Found NGG at >gene158
+Found NGG at >gene163
+Found NGG at >gene167
+Found NGG at >gene188
+Found NGG at >gene205
+Found NGG at >gene260
+Found NGG at >gene339
+Found NGG at >gene373
+Found NGG at >gene418
+Found NGG at >gene457
+On lovebird_topmotifs.fasta, found 20 NGG genes out of 213 candidates
+-----------------
+
+Searching gorilla_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene20
+Found NGG at >gene70
+Found NGG at >gene74
+Found NGG at >gene114
+Found NGG at >gene130
+Found NGG at >gene143
+Found NGG at >gene146
+Found NGG at >gene147
+Found NGG at >gene153
+Found NGG at >gene195
+Found NGG at >gene220
+Found NGG at >gene239
+Found NGG at >gene266
+Found NGG at >gene271
+Found NGG at >gene286
+Found NGG at >gene321
+Found NGG at >gene347
+Found NGG at >gene378
+Found NGG at >gene398
+Found NGG at >gene404
+Found NGG at >gene411
+Found NGG at >gene457
+Found NGG at >gene474
+Found NGG at >gene499
+On gorilla_topmotifs.fasta, found 24 NGG genes out of 216 candidates
+-----------------
+
+Searching turtle_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene37
+Found NGG at >gene76
+Found NGG at >gene102
+Found NGG at >gene129
+Found NGG at >gene145
+Found NGG at >gene156
+Found NGG at >gene165
+Found NGG at >gene235
+Found NGG at >gene306
+Found NGG at >gene311
+Found NGG at >gene329
+Found NGG at >gene356
+Found NGG at >gene397
+Found NGG at >gene439
+Found NGG at >gene452
+Found NGG at >gene496
+Found NGG at >gene498
+On turtle_topmotifs.fasta, found 17 NGG genes out of 211 candidates
+-----------------
+
+Searching dromedary_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene37
+Found NGG at >gene45
+Found NGG at >gene85
+Found NGG at >gene100
+Found NGG at >gene102
+Found NGG at >gene107
+Found NGG at >gene162
+Found NGG at >gene234
+Found NGG at >gene235
+Found NGG at >gene307
+Found NGG at >gene323
+Found NGG at >gene332
+Found NGG at >gene335
+Found NGG at >gene361
+Found NGG at >gene371
+Found NGG at >gene390
+Found NGG at >gene404
+Found NGG at >gene406
+Found NGG at >gene410
+Found NGG at >gene416
+Found NGG at >gene431
+On dromedary_topmotifs.fasta, found 21 NGG genes out of 224 candidates
+-----------------
+
+Searching gopher_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene60
+Found NGG at >gene114
+Found NGG at >gene149
+Found NGG at >gene153
+Found NGG at >gene186
+Found NGG at >gene190
+Found NGG at >gene249
+Found NGG at >gene276
+Found NGG at >gene286
+Found NGG at >gene322
+Found NGG at >gene328
+Found NGG at >gene347
+Found NGG at >gene369
+Found NGG at >gene383
+Found NGG at >gene421
+Found NGG at >gene445
+Found NGG at >gene454
+Found NGG at >gene471
+Found NGG at >gene485
+Found NGG at >gene490
+On gopher_topmotifs.fasta, found 20 NGG genes out of 196 candidates
+-----------------
+
+Searching chicken_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene8
+Found NGG at >gene77
+Found NGG at >gene140
+Found NGG at >gene153
+Found NGG at >gene206
+Found NGG at >gene224
+Found NGG at >gene237
+Found NGG at >gene262
+Found NGG at >gene297
+Found NGG at >gene307
+Found NGG at >gene325
+Found NGG at >gene355
+Found NGG at >gene439
+Found NGG at >gene454
+On chicken_topmotifs.fasta, found 14 NGG genes out of 196 candidates
+-----------------
+
+Searching fox_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene6
+Found NGG at >gene46
+Found NGG at >gene98
+Found NGG at >gene142
+Found NGG at >gene180
+Found NGG at >gene234
+Found NGG at >gene305
+Found NGG at >gene316
+Found NGG at >gene322
+Found NGG at >gene427
+Found NGG at >gene447
+Found NGG at >gene461
+On fox_topmotifs.fasta, found 12 NGG genes out of 195 candidates
+-----------------
+
+Searching goat_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene67
+Found NGG at >gene122
+Found NGG at >gene142
+Found NGG at >gene145
+Found NGG at >gene165
+Found NGG at >gene187
+Found NGG at >gene196
+Found NGG at >gene198
+Found NGG at >gene234
+Found NGG at >gene268
+Found NGG at >gene291
+Found NGG at >gene307
+Found NGG at >gene317
+Found NGG at >gene328
+Found NGG at >gene333
+Found NGG at >gene360
+Found NGG at >gene404
+Found NGG at >gene416
+On goat_topmotifs.fasta, found 18 NGG genes out of 220 candidates
+-----------------
+
+Inserting A before GG on file bunny_topmotifs.fasta-------------
+
+Inserting A before GG on file lamb_topmotifs.fasta-------------
+
+Inserting A before GG on file lovebird_topmotifs.fasta-------------
+
+Inserting A before GG on file gorilla_topmotifs.fasta-------------
+
+Inserting A before GG on file turtle_topmotifs.fasta-------------
+
+Inserting A before GG on file dromedary_topmotifs.fasta-------------
+
+Inserting A before GG on file gopher_topmotifs.fasta-------------
+
+Inserting A before GG on file chicken_topmotifs.fasta-------------
+
+Inserting A before GG on file fox_topmotifs.fasta-------------
+
+Inserting A before GG on file goat_topmotifs.fasta-------------
+
+Inserting A before GG on file bunny_topmotifs.fasta-------------
+
+Inserting A before GG on file lamb_topmotifs.fasta-------------
+
+Inserting A before GG on file lovebird_topmotifs.fasta-------------
+
+Inserting A before GG on file gorilla_topmotifs.fasta-------------
+
+Inserting A before GG on file turtle_topmotifs.fasta-------------
+
+Inserting A before GG on file dromedary_topmotifs.fasta-------------
+
+Inserting A before GG on file gopher_topmotifs.fasta-------------
+
+Inserting A before GG on file chicken_topmotifs.fasta-------------
+
+Inserting A before GG on file fox_topmotifs.fasta-------------
+
+Inserting A before GG on file goat_topmotifs.fasta-------------
+
+Inserting A before GG on file bunny_topmotifs.fasta-------------
+
+Inserting A before GG on file lamb_topmotifs.fasta-------------
+
+Inserting A before GG on file lovebird_topmotifs.fasta-------------
+
+Inserting A before GG on file gorilla_topmotifs.fasta-------------
+
+Inserting A before GG on file turtle_topmotifs.fasta-------------
+
+Inserting A before GG on file dromedary_topmotifs.fasta-------------
+
+Inserting A before GG on file gopher_topmotifs.fasta-------------
+
+Inserting A before GG on file chicken_topmotifs.fasta-------------
+
+Inserting A before GG on file fox_topmotifs.fasta-------------
+
+Inserting A before GG on file goat_topmotifs.fasta-------------
+
+Searching bunny_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene9
+Found NGG at >gene21
+Found NGG at >gene41
+Found NGG at >gene64
+Found NGG at >gene122
+Found NGG at >gene124
+Found NGG at >gene211
+Found NGG at >gene216
+Found NGG at >gene253
+Found NGG at >gene269
+Found NGG at >gene331
+Found NGG at >gene464
+Found NGG at >gene489
+On bunny_topmotifs.fasta, found 13 NGG genes out of 225 candidates
+-----------------
+
+Searching lamb_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene8
+Found NGG at >gene20
+Found NGG at >gene25
+Found NGG at >gene41
+Found NGG at >gene68
+Found NGG at >gene82
+Found NGG at >gene86
+Found NGG at >gene121
+Found NGG at >gene122
+Found NGG at >gene134
+Found NGG at >gene153
+Found NGG at >gene199
+Found NGG at >gene219
+Found NGG at >gene377
+Found NGG at >gene409
+Found NGG at >gene428
+On lamb_topmotifs.fasta, found 16 NGG genes out of 213 candidates
+-----------------
+
+Searching lovebird_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene13
+Found NGG at >gene14
+Found NGG at >gene20
+Found NGG at >gene37
+Found NGG at >gene49
+Found NGG at >gene58
+Found NGG at >gene76
+Found NGG at >gene79
+Found NGG at >gene135
+Found NGG at >gene149
+Found NGG at >gene158
+Found NGG at >gene163
+Found NGG at >gene167
+Found NGG at >gene188
+Found NGG at >gene205
+Found NGG at >gene260
+Found NGG at >gene339
+Found NGG at >gene373
+Found NGG at >gene418
+Found NGG at >gene457
+On lovebird_topmotifs.fasta, found 20 NGG genes out of 213 candidates
+-----------------
+
+Searching gorilla_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene20
+Found NGG at >gene70
+Found NGG at >gene74
+Found NGG at >gene114
+Found NGG at >gene130
+Found NGG at >gene143
+Found NGG at >gene146
+Found NGG at >gene147
+Found NGG at >gene153
+Found NGG at >gene195
+Found NGG at >gene220
+Found NGG at >gene239
+Found NGG at >gene266
+Found NGG at >gene271
+Found NGG at >gene286
+Found NGG at >gene321
+Found NGG at >gene347
+Found NGG at >gene378
+Found NGG at >gene398
+Found NGG at >gene404
+Found NGG at >gene411
+Found NGG at >gene457
+Found NGG at >gene474
+Found NGG at >gene499
+On gorilla_topmotifs.fasta, found 24 NGG genes out of 216 candidates
+-----------------
+
+Searching turtle_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene37
+Found NGG at >gene76
+Found NGG at >gene102
+Found NGG at >gene129
+Found NGG at >gene145
+Found NGG at >gene156
+Found NGG at >gene165
+Found NGG at >gene235
+Found NGG at >gene306
+Found NGG at >gene311
+Found NGG at >gene329
+Found NGG at >gene356
+Found NGG at >gene397
+Found NGG at >gene439
+Found NGG at >gene452
+Found NGG at >gene496
+Found NGG at >gene498
+On turtle_topmotifs.fasta, found 17 NGG genes out of 211 candidates
+-----------------
+
+Searching dromedary_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene37
+Found NGG at >gene45
+Found NGG at >gene85
+Found NGG at >gene100
+Found NGG at >gene102
+Found NGG at >gene107
+Found NGG at >gene162
+Found NGG at >gene234
+Found NGG at >gene235
+Found NGG at >gene307
+Found NGG at >gene323
+Found NGG at >gene332
+Found NGG at >gene335
+Found NGG at >gene361
+Found NGG at >gene371
+Found NGG at >gene390
+Found NGG at >gene404
+Found NGG at >gene406
+Found NGG at >gene410
+Found NGG at >gene416
+Found NGG at >gene431
+On dromedary_topmotifs.fasta, found 21 NGG genes out of 224 candidates
+-----------------
+
+Searching gopher_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene60
+Found NGG at >gene114
+Found NGG at >gene149
+Found NGG at >gene153
+Found NGG at >gene186
+Found NGG at >gene190
+Found NGG at >gene249
+Found NGG at >gene276
+Found NGG at >gene286
+Found NGG at >gene322
+Found NGG at >gene328
+Found NGG at >gene347
+Found NGG at >gene369
+Found NGG at >gene383
+Found NGG at >gene421
+Found NGG at >gene445
+Found NGG at >gene454
+Found NGG at >gene471
+Found NGG at >gene485
+Found NGG at >gene490
+On gopher_topmotifs.fasta, found 20 NGG genes out of 196 candidates
+-----------------
+
+Searching chicken_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene8
+Found NGG at >gene77
+Found NGG at >gene140
+Found NGG at >gene153
+Found NGG at >gene206
+Found NGG at >gene224
+Found NGG at >gene237
+Found NGG at >gene262
+Found NGG at >gene297
+Found NGG at >gene307
+Found NGG at >gene325
+Found NGG at >gene355
+Found NGG at >gene439
+Found NGG at >gene454
+On chicken_topmotifs.fasta, found 14 NGG genes out of 196 candidates
+-----------------
+
+Searching fox_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene6
+Found NGG at >gene46
+Found NGG at >gene98
+Found NGG at >gene142
+Found NGG at >gene180
+Found NGG at >gene234
+Found NGG at >gene305
+Found NGG at >gene316
+Found NGG at >gene322
+Found NGG at >gene427
+Found NGG at >gene447
+Found NGG at >gene461
+On fox_topmotifs.fasta, found 12 NGG genes out of 195 candidates
+-----------------
+
+Searching goat_topmotifs.fasta for NGG
+-------------
+Found NGG at >gene67
+Found NGG at >gene122
+Found NGG at >gene142
+Found NGG at >gene145
+Found NGG at >gene165
+Found NGG at >gene187
+Found NGG at >gene196
+Found NGG at >gene198
+Found NGG at >gene234
+Found NGG at >gene268
+Found NGG at >gene291
+Found NGG at >gene307
+Found NGG at >gene317
+Found NGG at >gene328
+Found NGG at >gene333
+Found NGG at >gene360
+Found NGG at >gene404
+Found NGG at >gene416
+On goat_topmotifs.fasta, found 18 NGG genes out of 220 candidates
+-----------------
+
+Inserting A before GG on file bunny_topmotifs.fasta-------------
+
+Inserting A before GG on file chicken_precrispr.fasta-------------
+
+Inserting A before GG on file chicken_precrispr.fasta-------------
+
+Inserting A before GG on file chicken_precrispr.fasta-------------
