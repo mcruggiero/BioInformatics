@@ -241,7 +241,7 @@ def edit_genome():
 
         # Reporter
         with open("report.txt", "a+") as f:
-            f.write("Inserting A before GG on file {}\n-------------\n".format(animal))
+            f.write("Inserting A at NGG sites on file {}\n-------------\n".format(animal))
             f.close()
 
         for gene in big_house[animal]:
