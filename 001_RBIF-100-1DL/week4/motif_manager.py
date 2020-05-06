@@ -222,3 +222,51 @@ def locate():
         with open("exomes_precrispr/{}".format(listing), "w") as crispy:
             for line in soggy_dict[file]:
                 crispy.write("{}\n".format(line))
+                
+def edit_genome():
+    big_house = {}
+    crispy_dict = {}
+
+    # First build dictionary for candidates
+    for fasta in os.listdir("exomes_precrispr"):
+        with open('exomes_precrispr/{}'.format(fasta)) as f:
+            lines = [line.rstrip() for line in f]
+
+        entry = {lines[2*i]:lines[2*i + 1] for i in range(0,len(lines)//2)}
+        big_house[fasta] = entry
+
+    # Search through string for upsteam GG
+    for animal in big_house:
+        crispy_list = []
+
+        # Reporter
+        with open("report.txt", "a+") as f:
+            f.write("Inserting A before GG on file {}\n-------------\n".format(animal))
+            f.close()
+
+        for gene in big_house[animal]:
+            candidate = big_house[animal][gene]
+            search = re.finditer("GG", candidate)
+            indices = [pos for pos in [m.start(0) for m in search] if pos > 19]
+            for ind in indices:
+                candidate = candidate[:ind] + "A" + candidate[ind:]
+
+            if len(indices) > 0:
+                crispy_list.append(gene)
+                crispy_list.append(candidate)
+
+        crispy_dict[animal] = crispy_list
+
+    # Make Directory Structure
+    if not os.path.exists("exomes_postcrispr"):
+        os.mkdir("exomes_postcrispr")
+    else:
+        shutil.rmtree("exomes_postcrispr")
+        os.mkdir("exomes_postcrispr")
+
+    # Create Files
+    for file in crispy_dict:
+        listing = file.split("_")[0] + "_postcrispr.fasta"
+        with open("exomes_postcrispr/{}".format(listing), "w") as crispy:
+            for line in crispy_dict[file]:
+                crispy.write("{}\n".format(line))
