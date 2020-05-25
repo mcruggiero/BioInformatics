@@ -27,7 +27,8 @@ class ParseFastQ(object):
          
     def __iter__(self):
         return self
-     
+    
+    # I think this is supposed to be __next__(), so I'm changing it
     def __next__(self):
         """Reads in next element, parses, and does minimal verification.
         Returns: tuple: (seqHeader,seqStr,qualHeader,qualStr)"""
