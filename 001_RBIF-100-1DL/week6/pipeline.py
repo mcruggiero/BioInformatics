@@ -6,7 +6,7 @@ import pysam
 import datetime
 
 class Main:
-    def __init__(self):
+    def __init__(self, har_clinic, hawkins_pooled):
         
         # Load reference
         with open("dgorgon_reference.fa") as f:
@@ -19,8 +19,10 @@ class Main:
         report.write("\nAnalysis Run Started:\n" + now.strftime("%c") + "\n---samples---\n")
         report.close()
         
-        coding_dict = self.trimmer("harrington_clinical_data.txt", "hawkins_pooled_sequences.fastq")
+        coding_dict = self.trimmer(har_clinic, hawkins_pooled)
         self.alignment()
+        
+        color_report = {}
         for i in coding_dict:
             file_path = "fastqs/{}.sorted.bam".format(coding_dict[i]["name"])
             coding_dict[i]["mutation"] = self.pileup(file_path)
@@ -31,6 +33,13 @@ class Main:
             # for big big sets, it actually might be faster, however
             mutation = coding_mutation["possible"] - {expected}
             mutation = list(mutation)[0]
+            
+            # Color Keeping: I think we should also have a count, but not asked for...
+            if coding_dict[i]["color"] not in color_report:
+                color_report[coding_dict[i]["color"]] = {"expected": expected,
+                                                         "mutation": mutation,
+                                                         "position": coding_mutation["position"]}
+                
             
             with open("report.txt", "a") as myfile:
                 report_text = "Sample {0} had a {1} mold, " \
@@ -45,7 +54,21 @@ class Main:
                 
                 
                 myfile.write(report_text)
-        print(coding_dict[i])
+        
+        with open("report.txt", "a") as myfile:
+            myfile.write("\n---mold-colors---\n")
+            
+        for color in color_report:
+            with open("report.txt", "a") as myfile:
+                report_text = "The {0} mold was caused by a mutation " \
+                              "in position {1}. The wildtype base was {2} " \
+                              "and the mutation was {3}. \n".format(color,
+                                                                    color_report[color]["position"],
+                                                                    color_report[color]["expected"],
+                                                                    color_report[color]["mutation"])
+            
+                myfile.write(report_text)
+
         
     # Part I: Trim and report
     def trimmer(self, clinical_path, fast_path):
@@ -125,4 +148,8 @@ class Main:
         return mutation_dict
 
 if __name__== "__main__":    
-    Main()
+    
+    ###
+    # Important: changes these TXTs to match your file structure
+    ###
+    Main("harrington_clinical_data.txt", "hawkins_pooled_sequences.fastq")
