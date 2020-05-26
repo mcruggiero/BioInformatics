@@ -1,0 +1,54 @@
+
+Analysis Run Started:
+Mon May 25 23:06:27 2020
+----------
+Sample Abbey had a Black mold, 699 reads, and had 52.07% of the reads at position 13 had the mutation C. 
+Sample Adelaide had a Orange mold, 548 reads, and had 51.64% of the reads at position 83 had the mutation C. 
+Sample Alana had a Black mold, 581 reads, and had 47.5% of the reads at position 13 had the mutation C. 
+Sample Arabella had a Black mold, 519 reads, and had 49.52% of the reads at position 13 had the mutation C. 
+Sample Arianna had a Orange mold, 301 reads, and had 45.18% of the reads at position 83 had the mutation C. 
+Sample Bobby had a Black mold, 387 reads, and had 52.71% of the reads at position 13 had the mutation C. 
+Sample Brayden had a Black mold, 566 reads, and had 48.59% of the reads at position 13 had the mutation C. 
+Sample Bridget had a Orange mold, 600 reads, and had 49.83% of the reads at position 83 had the mutation C. 
+Sample Bruce had a Orange mold, 547 reads, and had 54.11% of the reads at position 83 had the mutation C. 
+Sample Byron had a Orange mold, 431 reads, and had 49.88% of the reads at position 83 had the mutation C. 
+Sample Cali had a Orange mold, 467 reads, and had 51.18% of the reads at position 83 had the mutation C. 
+Sample Camilla had a Orange mold, 441 reads, and had 52.61% of the reads at position 83 had the mutation C. 
+Sample Case had a Black mold, 388 reads, and had 48.71% of the reads at position 13 had the mutation C. 
+Sample Cason had a Black mold, 588 reads, and had 48.98% of the reads at position 13 had the mutation C. 
+Sample Damien had a Black mold, 570 reads, and had 48.42% of the reads at position 13 had the mutation C. 
+Sample Dania had a Black mold, 626 reads, and had 47.92% of the reads at position 13 had the mutation C. 
+Sample Dereon had a Orange mold, 322 reads, and had 53.11% of the reads at position 83 had the mutation C. 
+Sample Destiney had a Orange mold, 683 reads, and had 48.02% of the reads at position 83 had the mutation C. 
+Sample Dominik had a Black mold, 381 reads, and had 53.81% of the reads at position 13 had the mutation C. 
+Sample Gabrielle had a Orange mold, 334 reads, and had 49.7% of the reads at position 83 had the mutation C. 
+Sample Giancarlo had a Orange mold, 499 reads, and had 48.5% of the reads at position 83 had the mutation C. 
+Sample Greta had a Black mold, 315 reads, and had 46.67% of the reads at position 13 had the mutation C. 
+Sample Israel had a Orange mold, 395 reads, and had 48.61% of the reads at position 83 had the mutation C. 
+Sample Javion had a Orange mold, 532 reads, and had 48.68% of the reads at position 83 had the mutation C. 
+Sample Jaylen had a Black mold, 329 reads, and had 51.37% of the reads at position 13 had the mutation C. 
+Sample Jazlyn had a Yellow mold, 526 reads, and had 52.47% of the reads at position 120 had the mutation G. 
+Sample Jordyn had a Black mold, 464 reads, and had 47.41% of the reads at position 13 had the mutation C. 
+Sample Jordyna had a Yellow mold, 305 reads, and had 47.54% of the reads at position 120 had the mutation G. 
+Sample Joshua had a Black mold, 460 reads, and had 46.74% of the reads at position 13 had the mutation C. 
+Sample Justus had a Black mold, 575 reads, and had 45.74% of the reads at position 13 had the mutation C. 
+Sample Kamden had a Orange mold, 625 reads, and had 52.48% of the reads at position 83 had the mutation C. 
+Sample Karlee had a Yellow mold, 641 reads, and had 49.14% of the reads at position 120 had the mutation G. 
+Sample Kayla had a Yellow mold, 593 reads, and had 49.92% of the reads at position 120 had the mutation G. 
+Sample Keaton had a Green mold, 442 reads, and had 46.83% of the reads at position 134 had the mutation C. 
+Sample Kian had a Green mold, 372 reads, and had 51.08% of the reads at position 134 had the mutation C. 
+Sample Kirsten had a Black mold, 313 reads, and had 44.73% of the reads at position 13 had the mutation C. 
+Sample Libby had a Yellow mold, 306 reads, and had 49.02% of the reads at position 120 had the mutation G. 
+Sample Lorelei had a Orange mold, 352 reads, and had 48.3% of the reads at position 83 had the mutation C. 
+Sample Mariela had a Yellow mold, 523 reads, and had 48.37% of the reads at position 120 had the mutation G. 
+Sample Martin had a Green mold, 588 reads, and had 50.0% of the reads at position 134 had the mutation C. 
+Sample Mckayla had a Green mold, 620 reads, and had 50.16% of the reads at position 134 had the mutation C. 
+Sample Mckenzie had a Black mold, 342 reads, and had 50.58% of the reads at position 13 had the mutation C. 
+Sample Natalia had a Green mold, 683 reads, and had 48.02% of the reads at position 134 had the mutation C. 
+Sample Santiago had a Orange mold, 671 reads, and had 50.07% of the reads at position 83 had the mutation C. 
+Sample Sarai had a Black mold, 480 reads, and had 52.08% of the reads at position 13 had the mutation C. 
+Sample Serena had a Green mold, 468 reads, and had 45.94% of the reads at position 134 had the mutation C. 
+Sample Shelby had a Yellow mold, 466 reads, and had 46.78% of the reads at position 120 had the mutation G. 
+Sample Sienna had a Green mold, 536 reads, and had 52.99% of the reads at position 134 had the mutation C. 
+Sample Terry had a Orange mold, 694 reads, and had 47.84% of the reads at position 83 had the mutation C. 
+Sample Tristian had a Black mold, 393 reads, and had 50.89% of the reads at position 13 had the mutation C. 

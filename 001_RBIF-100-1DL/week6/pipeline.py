@@ -2,12 +2,51 @@ from parseFastq import ParseFastQ
 import re
 import os
 import shutil
+import pysam
+import datetime
 
 class Main:
     def __init__(self):
+        
+        # Load reference
+        with open("dgorgon_reference.fa") as f:
+            dgogron = f.readlines()
+        dgorgon_reference = [x.strip() for x in dgogron][1]
+        
+        # Create Report
+        report = open("report.txt", "w")
+        now = datetime.datetime.now()
+        report.write("\nAnalysis Run Started:\n" + now.strftime("%c") + "\n---samples---\n")
+        report.close()
+        
         coding_dict = self.trimmer("harrington_clinical_data.txt", "hawkins_pooled_sequences.fastq")
         self.alignment()
-
+        for i in coding_dict:
+            file_path = "fastqs/{}.sorted.bam".format(coding_dict[i]["name"])
+            coding_dict[i]["mutation"] = self.pileup(file_path)
+            coding_mutation = coding_dict[i]["mutation"]
+            expected = dgorgon_reference[coding_mutation["position"]]
+            
+            # This syntax is terrible, but I am running out of time
+            # for big big sets, it actually might be faster, however
+            mutation = coding_mutation["possible"] - {expected}
+            mutation = list(mutation)[0]
+            
+            with open("report.txt", "a") as myfile:
+                report_text = "Sample {0} had a {1} mold, " \
+                              "{2} reads, and had {3}% of the reads at " \
+                              "position {4} had " \
+                              "the mutation {5}. \n".format(coding_dict[i]["name"],
+                                                            coding_dict[i]["color"],
+                                                            coding_mutation["reads"],
+                                                            round(coding_mutation[mutation],2),
+                                                            coding_mutation["position"],
+                                                            mutation)
+                
+                
+                myfile.write(report_text)
+        print(coding_dict[i])
+        
     # Part I: Trim and report
     def trimmer(self, clinical_path, fast_path):
         #First we are going to make a dictionary with all of the clinical entries
@@ -64,9 +103,26 @@ class Main:
             os.system("samtools sort -m 100M -o fastqs/{0}.sorted.bam fastqs/{0}.bam".format(split))
             os.system("samtools index fastqs/{0}.sorted.bam".format(split))
             # Part 2&3 Completed
-            
-        
     
-    
+    # Part 4 
+    def pileup(self,path):
+        samfile = pysam.AlignmentFile(path, "rb")
+        count_dict = {}
+        for item in samfile.pileup():
+            total_count = item.get_num_aligned()
+            summary = item.get_query_sequences()
+            count_dict[item.pos] = {x:100*summary.count(x)/total_count for x in summary}
+
+        mutation_dict = {}
+        for i in count_dict.keys():
+            if len(count_dict[i].keys()) > 1:
+                mutation_dict = count_dict[i]
+                mutation_dict["possible"] = set(count_dict[i].keys())
+                mutation_dict["reads"] = total_count
+                mutation_dict["position"] = i
+                
+        samfile.close()
+        return mutation_dict
+
 if __name__== "__main__":    
     Main()
