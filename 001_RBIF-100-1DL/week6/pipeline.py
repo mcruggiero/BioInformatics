@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from parseFastq import ParseFastQ
 import re
 import os
