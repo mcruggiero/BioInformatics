@@ -1,0 +1,51 @@
+	Discoverer	Location	Diamater (mm)	Environment	Status	code_name	mean	std
+0	Kerr	New Jersey	68	River	Sequenced	addax	7.431083333333333	4.2145583192535
+1	Schacher	Sweden	44	Sewage	Sequenced	badger	7.520983333333334	4.295289594395496
+2	No	Florida	6	River	Sequenced	basilisk	7.345858333333334	4.452870152676499
+3	Farrior	New Jersey	75	River	Sequenced	bat	7.524125000000001	4.2841167391161274
+4	Look	Florida	66	Sewage	Sequenced	bear	7.304550000000001	4.297440202899861
+5	Acosta	Staten Island	64	Swamp	Not sequenced	beetle	7.691816666666667	4.358099379284761
+6	Corpus	Staten Island	78	Swamp	Sequenced	budgerigar	7.487408333333333	4.33267506281403
+7	Barrette	Staten Island	19	River	Sequenced	buffalo	22.379341666666665	4.2713612369591525
+8	Mauricio	Florida	57	River	Sequenced	bull	7.315	4.308905545495283
+9	Kelleher	New Jersey	26	Swamp	Not sequenced	bunny	7.510516666666666	4.319311411138226
+10	Sambrano	Sweden	72	Sewage	Sequenced	camel	7.482875000000001	4.412079761032016
+11	Rivet	Sweden	26	Swamp	Sequenced	chicken	7.369	4.296680753791233
+12	Innis	New Jersey	15	Sewage	Not sequenced	cow	7.436858333333333	4.2898666311744345
+13	Bock	Staten Island	32	River	Sequenced	coyote	7.586125	4.362044234191312
+14	Noonan	Florida	80	Sewage	Sequenced	deer	7.582299999999998	4.325630402226555
+15	Notter	Florida	41	Swamp	Not sequenced	dingo	7.5663833333333335	4.398452540730155
+16	Lalor	Florida	19	Swamp	Not sequenced	dog	7.442349999999999	4.226094175181145
+17	Forness	New Jersey	30	Sewage	Sequenced	dromedary	7.4560916666666675	4.29278782474325
+18	Snuggs	Sweden	39	Swamp	Sequenced	eland	7.496716666666666	4.381462300007714
+19	Breton	Staten Island	42	Swamp	Sequenced	elephant	7.608991666666667	4.415699065070432
+20	Klump	New Jersey	62	Swamp	Not sequenced	finch	7.439491666666666	4.372534008817301
+21	Vanderburg	Sweden	26	River	Sequenced	fox	25.099075	2.9105377042237977
+22	Gorham	New Jersey	24	Sewage	Sequenced	goat	7.383275	4.278916240246082
+23	Mccafferty	Florida	21	Sewage	Sequenced	gopher	7.630516666666666	4.3709904178636165
+24	Landey	Florida	30	River	Sequenced	gorilla	7.468758333333334	4.3117114979549855
+25	Gies	New Jersey	47	River	Sequenced	groundhog	7.481941666666665	4.4095419996409175
+26	Sandoz	Sweden	5	Swamp	Not sequenced	highland	7.535416666666666	4.335512925409044
+27	Elridge	New Jersey	55	Swamp	Sequenced	impala	7.635158333333332	4.324884311546829
+28	Blanch	Staten Island	48	Swamp	Sequenced	kangaroo	7.6409666666666665	4.3012104767792465
+29	Gulino	New Jersey	74	Swamp	Sequenced	kitten	7.497775000000002	4.255692399525017
+30	Kesner	New Jersey	28	Sewage	Sequenced	lamb	7.642958333333333	4.321936776291838
+31	Labrie	Florida	17	Sewage	Not sequenced	lion	7.240383333333333	4.365681277844527
+32	Dorrough	Staten Island	4	Sewage	Sequenced	lizard	7.516941666666667	4.344718275860614
+33	Knighten	New Jersey	25	River	Not sequenced	lovebird	7.565675	4.2405652780859695
+34	Frew	New Jersey	58	Swamp	Not sequenced	mongoose	7.394741666666667	4.31236108181244
+35	Tilton	Sweden	71	River	Sequenced	oryx	7.718458333333334	4.2941456511469065
+36	Pickron	Sweden	55	Sewage	Sequenced	panther	7.601641666666666	4.283868487897034
+37	Oommen	Sweden	35	River	Sequenced	parrot	7.5195750000000015	4.356260254244268
+38	Twine	Sweden	56	Sewage	Sequenced	peccary	7.358483333333334	4.2705642718172765
+39	Carstensen	Staten Island	65	Sewage	Sequenced	pronghorn	7.265491666666667	4.304024445205969
+40	Marchal	Florida	80	Swamp	Sequenced	puma	7.638208333333334	4.39848110601041
+41	Beer	Staten Island	40	Sewage	Not sequenced	salamander	7.498358333333332	4.379672330391536
+42	Urenda	Sweden	78	Swamp	Not sequenced	sheep	7.618366666666668	4.292565491508416
+43	Rule	Sweden	46	River	Sequenced	snake	7.594991666666666	4.327634631057774
+44	Mohamed	Florida	5	Swamp	Sequenced	snowy	7.549550000000001	4.273408315482308
+45	Hieber	New Jersey	60	River	Sequenced	springbok	7.439258333333334	4.2802747224834246
+46	Bush	Staten Island	20	River	Not sequenced	turtle	7.699616666666667	4.283734646277967
+47	Sangster	Sweden	14	River	Sequenced	walrus	7.661108333333333	4.353376221003328
+48	Critchlow	Staten Island	33	River	Not sequenced	warthog	7.581808333333333	4.330992493635905
+49	Bonura	Staten Island	66	Sewage	Sequenced	waterbuck	7.3313749999999995	4.389671801631834
