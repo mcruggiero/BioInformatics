@@ -1,0 +1,385 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14581,        375]
+NotebookOptionsPosition[     14237,        359]
+NotebookOutlinePosition[     14674,        377]
+CellTagsIndexPosition[     14631,        374]
+WindowFrame->Palette*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"glycine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.0044668359215096305`", ",", "1.6595869074375631`*^-10"}], 
+      "}"}], ",", "\<\"C(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"GGU\"\>", ",", "\<\"GGC\"\>", ",", "\<\"GGA\"\>", 
+       ",", "\<\"GGG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       "\"N\"",SubscriptBox["\"H\"", "2"],"\"C\"",SubscriptBox["\"H\"", "2"],
+        "\"C\"","\"O\"","\"O\"","\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-alanine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.0044668359215096305`", ",", "1.348962882591656`*^-10"}], 
+      "}"}], ",", "\<\"CC(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"GCU\"\>", ",", "\<\"GCC\"\>", ",", "\<\"GCA\"\>", 
+       ",", "\<\"GCG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "3"],SubscriptBox["\"H\"", "7"],"\"N\"",
+        SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-serine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.006456542290346556`", ",", "6.165950018614809`*^-10"}], 
+      "}"}], ",", "\<\"C(C(C(=O)O)N)O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"UCU\"\>", ",", "\<\"UCC\"\>", ",", "\<\"UCA\"\>", 
+       ",", "\<\"UCG\"\>", ",", "\<\"AGU\"\>", ",", "\<\"AGC\"\>"}], "}"}], 
+     ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "3"],SubscriptBox["\"H\"", "7"],"\"N\"",
+        SubscriptBox["\"O\"", "3"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-proline\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.011220184543019636`", ",", "2.29086765276777`*^-11"}], "}"}],
+      ",", "\<\"C1CC(NC1)C(=O)O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"CCU\"\>", ",", "\<\"CCC\"\>", ",", "\<\"CCA\"\>", 
+       ",", "\<\"CCG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "5"],SubscriptBox["\"H\"", "9"],"\"N\"",
+        SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-valine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.004073802778041126`", ",", "1.8197008586099825`*^-10"}], 
+      "}"}], ",", "\<\"CC(C)C(C(=O)[O-])[NH3+]\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"GUU\"\>", ",", "\<\"GUC\"\>", ",", "\<\"GUA\"\>", 
+       ",", "\<\"GUG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "5"],SubscriptBox["\"H\"", "11"],"\"N\"",
+        SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-threonine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.008128305161640995`", ",", "7.943282347242822`*^-10"}], 
+      "}"}], ",", "\<\"CC(C(C(=O)[O-])[NH3+])O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"ACU\"\>", ",", "\<\"ACC\"\>", ",", "\<\"ACA\"\>", 
+       ",", "\<\"ACG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "4"],SubscriptBox["\"H\"", "9"],"\"N\"",
+        SubscriptBox["\"O\"", "3"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-cysteine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.012022644346174132`", ",", "6.606934480075964`*^-9", ",", 
+       "1.9952623149688828`*^-11"}], "}"}], ",", "\<\"C(C(C(=O)O)N)S\"\>", 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"UGU\"\>", ",", "\<\"UGC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       "\"H\"","\"S\"","\"C\"",SubscriptBox["\"H\"", "2"],"\"C\"","\"H\"",
+        TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-isoleucine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.004786300923226385`", ",", "1.7378008287493763`*^-10"}], 
+      "}"}], ",", "\<\"CCC(C)C(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"AUU\"\>", ",", "\<\"AUC\"\>", ",", "\<\"AUA\"\>"}], "}"}], 
+     ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "6"],SubscriptBox["\"H\"", "13"],"\"N\"",
+        SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-leucine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.004677351412871981`", ",", "1.8197008586099825`*^-10"}], 
+      "}"}], ",", "\<\"CC(C)CC(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"UUA\"\>", ",", "\<\"UUG\"\>", ",", "\<\"CUU\"\>", 
+       ",", "\<\"CUC\"\>", ",", "\<\"CUA\"\>", ",", "\<\"CUG\"\>"}], "}"}], 
+     ",", 
+     StyleBox[
+      TemplateBox[{SubscriptBox[
+         TemplateBox[{"\"(\"", "\"C\"", 
+           SubscriptBox["\"H\"", "3"], "\")\""}, "RowDefault"], "2"],"\"C\"",
+        "\"H\"","\"C\"",SubscriptBox["\"H\"", "2"],"\"C\"","\"H\"",
+        TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-asparagine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.007244359600749898`", ",", "1.9054607179632444`*^-9"}], 
+      "}"}], ",", "\<\"C(C(C(=O)O)N)C(=O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"AAU\"\>", ",", "\<\"AAC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "4"],SubscriptBox["\"H\"", "8"],SubscriptBox[
+        "\"N\"", "2"],SubscriptBox["\"O\"", "3"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-aspartic acid\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.010232929922807542`", ",", "0.00012589254117941674`", ",", 
+       "1.2589254117941662`*^-10"}], "}"}], 
+     ",", "\<\"C(C(C(=O)O)N)C(=O)O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"GAU\"\>", ",", "\<\"GAC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       "\"H\"",SubscriptBox["\"O\"", "2"],"\"C\"","\"C\"",SubscriptBox[
+        "\"H\"", "2"],"\"C\"","\"H\"",TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-glutamine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.006760829753919818`", ",", "7.413102413009162`*^-10"}], 
+      "}"}], ",", "\<\"C(CC(=O)N)C(C(=O)[O-])[NH3+]\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"CAA\"\>", ",", "\<\"CAG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "5"],SubscriptBox["\"H\"", "10"],SubscriptBox[
+        "\"N\"", "2"],SubscriptBox["\"O\"", "3"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-lysine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.006918309709189363`", ",", "2.8840315031266117`*^-11", ",", 
+       "8.709635899560796`*^-10"}], "}"}], ",", "\<\"C(CCN)CC(C(=O)O)N\"\>", 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"AAA\"\>", ",", "\<\"AAG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{SubscriptBox["\"H\"", "2"],"\"N\"",SubscriptBox[
+         TemplateBox[{"\"(\"", "\"C\"", 
+           SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"], "4"],"\"C\"",
+        "\"H\"",TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-glutamic acid\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.007943282347242814`", ",", "0.0000851138038202376`", ",", 
+       "3.38844156139202`*^-10"}], "}"}], ",", "\<\"C(CC(=O)O)C(C(=O)O)N\"\>",
+      ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"GAA\"\>", ",", "\<\"GAG\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       "\"H\"",SubscriptBox["\"O\"", "2"],"\"C\"","\"C\"",SubscriptBox[
+        "\"H\"", "2"],"\"C\"",SubscriptBox["\"H\"", "2"],"\"C\"","\"H\"",
+        TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-methionine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.007413102413009177`", ",", "5.248074602497734`*^-10"}], 
+      "}"}], ",", "\<\"CSCCC(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", "\<\"AUG\"\>", "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "5"],SubscriptBox["\"H\"", "11"],"\"N\"",
+        SubscriptBox["\"O\"", "2"],"\"S\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-histidine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.015848931924611134`", ",", "9.120108393559096`*^-7", ",", 
+       "4.677351412871981`*^-10"}], "}"}], 
+     ",", "\<\"C1=C(NC=N1)CC(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"CAU\"\>", ",", "\<\"CAC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "6"],SubscriptBox["\"H\"", "9"],SubscriptBox[
+        "\"N\"", "3"],SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-phenylalanine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.00630957344480193`", ",", "4.897788193684456`*^-10"}], "}"}],
+      ",", "\<\"C1=CC=C(C=C1)CC(C(=O)O)N\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"UUU\"\>", ",", "\<\"UUC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "6"],SubscriptBox["\"H\"", "5"],"\"C\"",
+        SubscriptBox["\"H\"", "2"],"\"C\"","\"H\"",
+        TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-arginine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.01513561248436208`", ",", "3.3113112148259076`*^-13", ",", 
+       "1.0232929922807536`*^-9"}], "}"}], 
+     ",", "\<\"NC(CCCN=C(N)N)C(O)=O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"CGU\"\>", ",", "\<\"CGC\"\>", ",", "\<\"CGA\"\>", 
+       ",", "\<\"CGG\"\>", ",", "\<\"AGA\"\>", ",", "\<\"AGG\"\>"}], "}"}], 
+     ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"H\"", "2"],"\"N\"","\"C\"",
+        TemplateBox[{"\"(\"", "\"=\"", "\"N\"", "\"H\"", "\")\""}, 
+         "RowDefault"],"\"N\"","\"H\"",SubscriptBox[
+         TemplateBox[{"\"(\"", "\"C\"", 
+           SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"], "3"],"\"C\"",
+        "\"H\"",TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-tyrosine\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00630957344480193`", ",", "3.4673685045253096`*^-11", ",", 
+       "6.165950018614809`*^-10"}], "}"}], 
+     ",", "\<\"C1=CC(=CC=C1CC(C(=O)O)N)O\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"UAU\"\>", ",", "\<\"UAC\"\>"}], "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       TemplateBox[{"\"(\"", "\"H\"", "\"O\"", "\")\""}, "RowDefault"],
+        SubscriptBox["\"C\"", "6"],SubscriptBox["\"H\"", "4"],"\"C\"",
+        SubscriptBox["\"H\"", "2"],"\"C\"","\"H\"",
+        TemplateBox[{"\"(\"", "\"N\"", 
+          SubscriptBox["\"H\"", "2"], "\")\""}, "RowDefault"],"\"C\"",
+        SubscriptBox["\"O\"", "2"],"\"H\""},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"L-tryptophan\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"0.0034673685045253167`", ",", "3.8904514499428046`*^-10"}], 
+      "}"}], ",", "\<\"C1=CC=C2C(=C1)C(=CN2)CC(C(=O)[O-])[NH3+]\"\>", ",", 
+     RowBox[{"{", "\<\"UGG\"\>", "}"}], ",", 
+     StyleBox[
+      TemplateBox[{
+       SubscriptBox["\"C\"", "11"],SubscriptBox["\"H\"", "12"],SubscriptBox[
+        "\"N\"", "2"],SubscriptBox["\"O\"", "2"]},
+       "RowDefault"],
+      StripOnInput->False,
+      ScriptBaselineShifts->{0.5, 0.75}]}], "}"}]}], "}"}]], NotebookDefault,
+ CellChangeTimes->{{3.804663645446891*^9, 3.8046636513546343`*^9}, 
+   3.804663693180092*^9, 3.8046637454752493`*^9, {3.804663811287262*^9, 
+   3.804663862166258*^9}, 3.804663905683145*^9, 3.8046639359638987`*^9, 
+   3.804663973316265*^9, 3.804664026382511*^9}]
+},
+WindowSize->{Fit, Fit},
+WindowMargins->{{-1055, Automatic}, {Automatic, 485}},
+WindowFrame->"Palette",
+WindowElements->{},
+WindowFrameElements->{"CloseBox", "MinimizeBox"},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Palette.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[559, 20, 13674, 337, 22, NotebookDefault]
+}
+]
+*)
+
+(* End of internal cache information *)
+
